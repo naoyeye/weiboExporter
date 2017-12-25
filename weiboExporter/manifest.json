@@ -1,0 +1,17 @@
+{
+  "name": "微博导出器",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "大头马说要把自己的微博导出来，然后帐号注销了，催着我做了这个插件。",
+  "permissions": [],
+  "icons": {
+    "128" : "yangxiaomi.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://m.weibo.cn/u/*", "*://weibo.com/*"],
+      "js" : ["lib/zepto.js", "contentscript.js"],
+      "css" : ["contentcss.css"]
+    }
+  ]
+}
